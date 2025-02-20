@@ -27,6 +27,7 @@ body.custom-body {
     min-height: 100vh;
     /* Asegura que el cuerpo ocupe al menos el 100% de la altura de la ventana */
     font-size: 17px;
+    background-image: url('images/fondo.png');
 }
 
 
@@ -90,7 +91,7 @@ header {
 
 
 .cuenta-regresiva {
-    background-image: url('images/nutrias.png');
+    /* background-image: url('images/nutrias.png'); */
     background-size: contain;
     display: flex;
     justify-content: center;
