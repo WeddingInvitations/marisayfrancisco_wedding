@@ -697,7 +697,7 @@ button#submit:active {
 #carrousel h1 {
     font-family: 'Quattrocento', serif;
     font-size: 35px;
-    color: black;
+    color: #4a3a3d;
     margin-bottom: 20px;
     letter-spacing: 2px;
 }
@@ -774,7 +774,7 @@ button#submit:active {
 }
 
 #musica h1 {
-    color: black;
+    color: #4a3a3d;
     font-family: 'Quattrocento', serif;
     font-size: 35px;
     letter-spacing: 2px;
@@ -794,7 +794,7 @@ button#submit:active {
 }
 
 #regalos h1 {
-    color: black;
+    color: #4a3a3d;
     font-family: 'Quattrocento', serif;
     font-size: 35px;
     letter-spacing: 2px;
