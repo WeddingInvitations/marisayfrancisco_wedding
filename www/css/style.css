@@ -60,14 +60,14 @@ header {
 
 /* Ubicación en el margen izquierdo */
 .flowers_left {
-    left: 10px;
-    transform: translateX(-10px);
+    left: -50px;
+    transform: translateX(30px);
 }
 
 /* Ubicación en el margen derecho */
 .flowers_right {
-    right: 10px;
-    transform: translateX(10px);
+    right: -50px;
+    transform: translateX(-30px);
 }
 
 /* Clase para hacerlas visibles */
