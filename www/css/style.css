@@ -58,6 +58,15 @@ header {
     margin: 20px auto 0px;
 }
 
+.videos_left {
+    max-width: 20%;
+    float: left;
+}
+
+.videos_right {
+    max-width: 20%;
+    float: right;
+}
 
 
 /* BIENVENIDOS */
