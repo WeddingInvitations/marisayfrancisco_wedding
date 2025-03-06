@@ -1,19 +1,21 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const flowers = document.querySelectorAll(".flower");
+// Selecciona las flores
+const flowersLeft = document.querySelector('.flowers_left');
+const flowersRight = document.querySelector('.flowers_right');
 
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add("visible"); // Muestra la flor
-            } else {
-                entry.target.classList.remove("visible"); // La oculta al subir
-            }
-        });
-    }, {
-        threshold: 0.3 // Detecta cuando el 30% del elemento es visible
-    });
+// Función para manejar la visibilidad de las flores
+function handleIntersection(entries, observer) {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');  // Aparece cuando entra en la vista
+    } else {
+      entry.target.classList.remove('visible');  // Desaparece cuando sale de la vista
+    }
+  });
+}
 
-    flowers.forEach((flower) => {
-        observer.observe(flower);
-    });
-});
+// Configura el IntersectionObserver
+const observer = new IntersectionObserver(handleIntersection, { threshold: 0.5 });  // Cambiar cuando al menos el 50% de la flor esté visible
+
+// Observa las flores
+observer.observe(flowersLeft);
+observer.observe(flowersRight);
