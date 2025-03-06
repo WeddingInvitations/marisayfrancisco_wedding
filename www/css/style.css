@@ -76,17 +76,9 @@ header {
 
 /* Ubicación en el margen derecho */
 .flowers_right {
-    position: absolute;
-    right: -50px;  /* Fuera de la pantalla por el margen derecho */
-    top: 60%;
-    opacity: 0;  /* Comienza invisible */
-    transition: opacity 1s ease-in-out;
+    float: right;
 }
 
-/* Clase para hacerlas visibles */
-.visible {
-    opacity: 1;
-}
 
 
 /* BIENVENIDOS */
