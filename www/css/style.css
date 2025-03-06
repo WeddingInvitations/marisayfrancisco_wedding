@@ -141,14 +141,14 @@ header {
     letter-spacing: 2px;
 }
 
-/* .information-texto p {
+.information-texto p {
     text-align: center;
     padding: 20px;
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.7);
     font-size: 18px;
     color: white;
-} */
+}
 
 .finca-image-container {
     position: relative;
