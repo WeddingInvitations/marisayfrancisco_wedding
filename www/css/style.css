@@ -676,15 +676,9 @@ button#submit:active {
         padding: 20px;
         max-width: 90%;
     }
-
-    #asistencia h1 {
-        font-size: 30px;
-    }
-
-    #asistencia p {
-        font-size: 16px;
-    }
 }
+
+
 
 /* CARROUSEL */
 
