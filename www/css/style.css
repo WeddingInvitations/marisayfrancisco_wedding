@@ -101,7 +101,6 @@ header {
     align-items: center;
     color: #4a3a3d;
     filter: opacity(0.7);
-    height: 300px;
     padding: 15px;
 }
 
@@ -114,8 +113,6 @@ header {
 
 .tiempo {
     text-align: center;
-    /* font-size: 1.2em; */
-    margin-bottom: 200px;
 }
 
 .barra {
