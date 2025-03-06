@@ -1,11 +1,3 @@
-.hidden {
-    display: none;
-}
-
-.visible {
-    display: block;
-    font-size: 0.8em;
-}
 
 
 html {
@@ -25,12 +17,9 @@ body.custom-body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    /* Asegura que el cuerpo ocupe al menos el 100% de la altura de la ventana */
     font-size: 17px;
     background-image: url('images/fondo.png');
 }
-
-
 
 
 
@@ -58,14 +47,30 @@ header {
     margin: 20px auto 0px;
 }
 
-.videos_left video {
-    max-width: 20%;
-    float: left;
+/* Configuración de las imágenes de flores */
+.flower {
+    position: absolute;
+    width: 80px; /* Ajusta según el tamaño de la flor */
+    opacity: 0;
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
 }
 
-.videos_right video {
-    max-width: 20%;
-    float: right;
+/* Ubicación en el margen izquierdo */
+.flowers_left {
+    left: 10px;
+    transform: translateX(-50px);
+}
+
+/* Ubicación en el margen derecho */
+.flowers_right {
+    right: 10px;
+    transform: translateX(50px);
+}
+
+/* Clase para hacerlas visibles */
+.visible {
+    opacity: 1;
+    transform: translateX(0);
 }
 
 
