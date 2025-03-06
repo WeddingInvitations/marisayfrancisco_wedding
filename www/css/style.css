@@ -55,19 +55,19 @@ header {
 }
 
 .flower img {
-    max-width: 50%;
+    max-width: 30%;
 }
 
 /* Ubicación en el margen izquierdo */
 .flowers_left {
     left: -50px;
-    transform: translateX(30px);
+    transform: translateX(20px);
 }
 
 /* Ubicación en el margen derecho */
 .flowers_right {
     right: -50px;
-    transform: translateX(-30px);
+    transform: translateX(-20px);
 }
 
 /* Clase para hacerlas visibles */
