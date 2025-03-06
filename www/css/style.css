@@ -69,9 +69,9 @@ header {
 
 #bienvenidos h1 {
     color: #4a3a3d;
-    font-family: 'Quattrocento', serif;
+    font-family: "Parisienne", cursive;
+    font-weight: 400;
     font-style: normal;
-    font-size: 30px;
     letter-spacing: 2px;
 }
 
