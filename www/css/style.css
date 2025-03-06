@@ -58,6 +58,17 @@ header {
     max-width: 30%;
 }
 
+/* Establecer las flores fuera de la pantalla al principio */
+.flowers_left, .flowers_right {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+/* Cuando la clase "show" es añadida, las flores aparecerán */
+.scroll-reveal.show {
+    opacity: 1;
+}
+
 /* Ubicación en el margen izquierdo */
 .flowers_left {
     float: left;
