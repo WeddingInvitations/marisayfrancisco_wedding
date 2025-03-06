@@ -48,11 +48,11 @@ header {
 }
 
 /* Configuración de las imágenes de flores */
-.flower {
+/* .flower {
     position: absolute;
     opacity: 0;
     transition: opacity 1s ease-in-out, transform 1s ease-in-out;
-}
+} */
 
 .flower img {
     max-width: 30%;
@@ -60,11 +60,7 @@ header {
 
 /* Ubicación en el margen izquierdo */
 .flowers_left {
-    position: absolute;
-    left: -50px;  /* Fuera de la pantalla por el margen izquierdo */
-    top: 20%;
-    opacity: 0;  /* Comienza invisible */
-    transition: opacity 1s ease-in-out;
+    float: left;
 }
 
 /* Ubicación en el margen derecho */
