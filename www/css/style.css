@@ -61,27 +61,24 @@ header {
 /* Ubicación en el margen izquierdo */
 .flowers_left {
     position: absolute;
-    left: -100px;  /* Coloca la flor completamente fuera de la pantalla */
+    left: -50px;  /* Fuera de la pantalla por el margen izquierdo */
     top: 20%;
-    transform: translateX(0);  /* No se mueve al principio */
     opacity: 0;  /* Comienza invisible */
-    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
 }
 
 /* Ubicación en el margen derecho */
 .flowers_right {
     position: absolute;
-    right: -100px;  /* Coloca la flor completamente fuera de la pantalla */
+    right: -50px;  /* Fuera de la pantalla por el margen derecho */
     top: 60%;
-    transform: translateX(0);  /* No se mueve al principio */
     opacity: 0;  /* Comienza invisible */
-    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
 }
 
 /* Clase para hacerlas visibles */
 .visible {
     opacity: 1;
-    transform: translateX(50px);
 }
 
 
