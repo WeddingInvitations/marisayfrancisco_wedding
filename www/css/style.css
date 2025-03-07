@@ -738,9 +738,10 @@ button#submit:active {
 }
 
 #musica h1 {
-    color: #4a3a3d;
-    font-family: 'Quattrocento', serif;
-    font-size: 35px;
+    color: #833947;
+    font-family: "Parisienne", cursive;
+    font-weight: 400;
+    font-style: normal;
     letter-spacing: 2px;
 }
 
@@ -750,6 +751,8 @@ button#submit:active {
     padding: 10px;
 }
 
+
+
 /* REGALOS */
 
 #regalos {
@@ -758,9 +761,10 @@ button#submit:active {
 }
 
 #regalos h1 {
-    color: #4a3a3d;
-    font-family: 'Quattrocento', serif;
-    font-size: 35px;
+    color: #833947;
+    font-family: "Parisienne", cursive;
+    font-weight: 400;
+    font-style: normal;
     letter-spacing: 2px;
 }
 
