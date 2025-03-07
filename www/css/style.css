@@ -195,18 +195,10 @@ header {
     position: relative;
     margin: 50px 0;
     padding-left: 40px;
-    border-left: 3px solid #4a3a3d;
+    border-left: 3px solid #a99d8a;
     margin-left: 660px;
 }
 
-@media only screen and (max-width: 600px) {
-    .timeline {
-        position: relative;
-        margin: 50px 0;
-        padding-left: 40px;
-        border-left: 3px solid #4a3a3d;
-    }
-}
 
 .event {
     position: relative;
@@ -225,7 +217,7 @@ header {
     top: 20px;
     width: 12px;
     height: 12px;
-    background-color: #868686;
+    background-color: #a99d8a;
     border-radius: 50%;
 }
 
