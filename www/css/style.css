@@ -164,6 +164,16 @@ header {
     border-radius: 15px;
 }
 
+.boton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #a99d8a;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
 /* Estilo para la información */
 .information-texto {
     position: relative;
