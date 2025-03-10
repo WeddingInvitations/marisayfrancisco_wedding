@@ -27,14 +27,12 @@ body.custom-body {
 
 header {
     background-size: contain;
-    background-image: url('images/portada2.jpg');
+    background-image: url('images/header.png');
     background-repeat: no-repeat;
     background-position: center;
     height: 400px;
     margin-top: 30px;
 }
-
-
 
 .scroll-reveal {
     opacity: 0;
