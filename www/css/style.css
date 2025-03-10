@@ -435,13 +435,12 @@ header {
 
 /* Formulario */
 .form-container-asist {
-    background: #ffffff;
+    background: #83394773;
     border-radius: 12px;
-    padding: 30px;
+    padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 450px;
     margin: 0 auto;
-    font-family: 'Roboto', sans-serif;
 }
 
 .form-group {
@@ -603,7 +602,7 @@ label[for="bebidaSi"] {
     background-color: black;
 }
 
-*/
+
 
 /* Botón de enviar: Estilo Business */
 button#submit {
@@ -641,13 +640,6 @@ button#submit:active {
     /* Elimina el levantamiento */
 }
 
-/* Responsivo */
-@media only screen and (max-width: 600px) {
-    .form-container-asist {
-        padding: 20px;
-        max-width: 90%;
-    }
-}
 
 
 
