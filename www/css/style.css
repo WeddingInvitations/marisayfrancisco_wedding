@@ -355,59 +355,45 @@ header {
     letter-spacing: 2px;
 }
 
-#info_interes h4 {
-    color: white;
-}
 
 #info_interes p {
     text-align: justify;
     padding: 15px;
 }
 
-
-.slider {
-    align-items: center;
-    position: relative;
-    overflow: hidden;
-    max-width: 800px;
-    margin: auto;
-}
-
-.slides {
+.hotel-info {
     display: flex;
-    transition: transform 0.5s ease-in-out;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
 }
 
-.slide {
-    min-width: 100%;
-    box-sizing: border-box;
-    text-align: center;
-    padding: 20px;
+.hotel-link {
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.3s ease;
 }
 
-.nav {
-    background-color: #00000000;
-    border: none;
+.hotel-link:hover {
+    color: #0056b3;
+}
+
+.boton-telefono button {
+    background-color: #28a745;
     color: white;
-    font-size: 24px;
-    padding: 10px;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
     cursor: pointer;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 1;
+    transition: background 0.3s ease;
 }
 
-.nav.prev {
-    left: 10px;
-}
-
-.nav.next {
-    right: 10px;
-}
-
-.nav:focus {
-    outline: none;
+.boton-telefono button:hover {
+    background-color: #218838;
 }
 
 
