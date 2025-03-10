@@ -26,12 +26,11 @@ body.custom-body {
 /* PORTADA */
 
 header {
-    background-size: contain;
+    background-size: cover;
     background-image: url('images/header.png');
     background-repeat: no-repeat;
     background-position: center;
     height: 400px;
-    margin-top: 30px;
 }
 
 .scroll-reveal {
