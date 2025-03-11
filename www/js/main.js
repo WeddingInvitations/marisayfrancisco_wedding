@@ -21,7 +21,7 @@
 //   animateOnScroll('scroll-reveal'); // Para los elementos que se revelan al hacer scroll
 // });
 
-const video = document.getElementById("mi-video");
+const video = document.getElementById(".animation");
 
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
