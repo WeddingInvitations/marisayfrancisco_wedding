@@ -21,15 +21,15 @@
 //   animateOnScroll('scroll-reveal'); // Para los elementos que se revelan al hacer scroll
 // });
 
-document.addEventListener("scroll", function () {
-  let scrollY = window.scrollY;
-  let eucaliptos = document.querySelector(".animation");
+// document.addEventListener("scroll", function () {
+//   let scrollY = window.scrollY;
+//   let eucaliptos = document.querySelector(".animation");
 
-  // Controla la opacidad según el scroll
-  let opacity = Math.min(scrollY / 300, 1); 
-  eucaliptos.style.opacity = opacity;
+//   // Controla la opacidad según el scroll
+//   let opacity = Math.min(scrollY / 300, 1); 
+//   eucaliptos.style.opacity = opacity;
 
-  // Controla la velocidad de reproducción del video (Opcional)
-  let speed = Math.min(scrollY / 500, 1); 
-  eucaliptos.playbackRate = speed;
-});
+//   // Controla la velocidad de reproducción del video (Opcional)
+//   let speed = Math.min(scrollY / 500, 1); 
+//   eucaliptos.playbackRate = speed;
+// });
