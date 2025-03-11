@@ -22,23 +22,22 @@
 // });
 
 document.addEventListener("DOMContentLoaded", () => {
-  const video = document.querySelector(".animation");
+  // Seleccionamos todos los videos con la clase "animation"
+  const videos = document.querySelectorAll(".animation");
 
-  if (video) { // Verifica si el video existe antes de usarlo
-      const observer = new IntersectionObserver(entries => {
-          entries.forEach(entry => {
-              if (entry.isIntersecting) {
-                  video.play();
-              } else {
-                  video.pause();
-                  video.currentTime = 0; // Reinicia al principio cuando desaparece
-              }
-          });
-      }, { threshold: 0.5 });
+  videos.forEach(video => {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          video.play(); // Reproduce el video cuando está en pantalla
+        } else {
+          video.pause(); // Pausa el video cuando sale de la pantalla
+          video.currentTime = 0; // Reinicia el video al principio
+        }
+      });
+    }, { threshold: 0.5 }); // Se activa cuando el 50% del video es visible
 
-      observer.observe(video);
-  } else {
-      console.error("No se encontró el elemento .animation");
-  }
+    observer.observe(video);
+  });
 });
 
