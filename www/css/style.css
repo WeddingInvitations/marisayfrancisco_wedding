@@ -16,7 +16,7 @@ body.custom-body {
     flex-direction: column;
     min-height: 100vh;
     font-size: 17px;
-    background-image: url('images/background.jpg');
+    /* background-image: url('images/background.jpg'); */
 }
 
 .animation-container {
@@ -98,7 +98,7 @@ header {
 
 
 .cuenta-regresiva {
-    /* background-image: url('images/nutrias.png'); */
+    background-image: url('images/background.jpg');
     background-size: contain;
     display: flex;
     justify-content: center;
