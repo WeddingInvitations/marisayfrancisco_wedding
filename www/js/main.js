@@ -21,15 +21,17 @@
 //   animateOnScroll('scroll-reveal'); // Para los elementos que se revelan al hacer scroll
 // });
 
-// document.addEventListener("scroll", function () {
-//   let scrollY = window.scrollY;
-//   let eucaliptos = document.querySelector(".animation");
+const video = document.getElementById("mi-video");
 
-//   // Controla la opacidad según el scroll
-//   let opacity = Math.min(scrollY / 300, 1); 
-//   eucaliptos.style.opacity = opacity;
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      video.play();
+    } else {
+      video.pause();
+      video.currentTime = 0; // Reinicia al principio cuando desaparece
+    }
+  });
+}, { threshold: 0.5 }); // Se activa cuando el 50% del video es visible
 
-//   // Controla la velocidad de reproducción del video (Opcional)
-//   let speed = Math.min(scrollY / 500, 1); 
-//   eucaliptos.playbackRate = speed;
-// });
+observer.observe(video);
