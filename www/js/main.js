@@ -21,17 +21,24 @@
 //   animateOnScroll('scroll-reveal'); // Para los elementos que se revelan al hacer scroll
 // });
 
-const video = document.getElementById(".animation");
+document.addEventListener("DOMContentLoaded", () => {
+  const video = document.querySelector(".animation");
 
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      video.play();
-    } else {
-      video.pause();
-      video.currentTime = 0; // Reinicia al principio cuando desaparece
-    }
-  });
-}, { threshold: 0.5 }); // Se activa cuando el 50% del video es visible
+  if (video) { // Verifica si el video existe antes de usarlo
+      const observer = new IntersectionObserver(entries => {
+          entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                  video.play();
+              } else {
+                  video.pause();
+                  video.currentTime = 0; // Reinicia al principio cuando desaparece
+              }
+          });
+      }, { threshold: 0.5 });
 
-observer.observe(video);
+      observer.observe(video);
+  } else {
+      console.error("No se encontró el elemento .animation");
+  }
+});
+
